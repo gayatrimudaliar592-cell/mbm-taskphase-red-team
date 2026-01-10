@@ -18,4 +18,8 @@ small{
     small{
         font-size: 1rem;
     }
+    
+    footer{
+        width:100%
+    }
 }
