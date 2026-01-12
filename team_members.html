@@ -16,7 +16,12 @@
 <body>
     <header>
         <nav class="navbar"><a href="index.html" class="homepage"><img src="homepage-svgrepo-com.png"></a>
-            <ul class="links">
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="links" id="links">
                 <li>
                     <button class="ddown">Project
                     </button>
@@ -86,19 +91,14 @@
     </header>
     <main>
         <div id="hero">
-            <h1 class="hero-section">Members</h1>
+            <h1 class="hero-section">Project Name</h1>
         </div>
-        <div class="panel" id="panel">
-            <div class="member-info" id="panel">
-                <div class="member-img" id="member-img">
-                    <img src="member_placeholder.jpg" alt="Picture of Member">
-                </div>
-                <h3 id="member-name">Member Name</h3>
-                <p id="quote">Their quote goes here.</p>
-            </div>
-        </div>
-
-        <div class="member-buttons" id="member-buttons">
+    
+        <aside></aside>
+    
+        <div id="content">
+            <h2>Introduction</h2>
+            <h2>Impact</h2>
         </div>
     </main>
     
@@ -111,6 +111,7 @@
             </p>
     </footer>
     <script src="lnd_mode.js"></script> 
-    <script src="ToC.js"></script>   
+    <script src="ToC.js"></script>  
+    <script src="navbar.js"></script> 
 </body>
 </html>
