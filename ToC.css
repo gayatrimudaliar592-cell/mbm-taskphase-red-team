@@ -32,7 +32,7 @@ aside li {
 }
 
 aside li a {
-    color: aliceblue;
+    color: rgb(0, 0, 0);
     text-transform: none;
     display: flex; 
     transform-origin: left;

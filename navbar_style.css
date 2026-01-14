@@ -32,7 +32,7 @@ header{
   
 
 .navbar{
-    background-color: rgb(173, 224, 64);
+    background-color: #003151;
     justify-content: center;
     align-items: flex-end;
     padding: 0rem 1rem;
@@ -67,7 +67,7 @@ header{
 }
 
 .links a{
-    color:black;
+    color:rgb(255, 255, 255);
     padding: 0.5rem 1rem;
     font: inherit;
     cursor: pointer;
@@ -77,7 +77,7 @@ header{
 .ddown{
     background: none;
     border: none;
-    color:black;
+    color:rgb(255, 255, 255);
     font: inherit;
     cursor: pointer;
     padding: 0rem 1rem;
@@ -88,7 +88,7 @@ header{
     top: 100%;
     left: 0;
     width: max-content;
-    background-color:  rgb(155, 194, 26);
+    background-color:  #0262a2;
     list-style: none;
     text-align: left;
     display: none;
@@ -101,13 +101,13 @@ header{
 .ddown_content a{
     display: block;
     padding: 0.5rem 1rem;
-    color:black;
+    color:rgb(255, 255, 255);
     white-space: nowrap;
     text-decoration: none;
 }
 
 .ddown_content a:hover{
-    background-color:  rgb(146, 180, 65);
+    background-color:  #4c7fa1;
     text-decoration: none;
 }
 
@@ -126,7 +126,6 @@ header{
     display: flex;
     flex-direction: column;              
     text-align: center;
-    background-color: antiquewhite;
 }
 
 .hamburger {

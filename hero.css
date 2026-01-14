@@ -1,13 +1,13 @@
 body {
     margin: 0;  
-    background-image: url("fern.png");
+    background-image: url("rippled_water.jpg");
     background-size:cover;
     background-position: center;
     background-attachment: scroll;
   }
 
 #content {
-    background-color: white;
+    background-color: antiquewhite;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
@@ -24,7 +24,7 @@ body.dark #content {
     align-items: center;
     text-align: center;
     flex-direction: column;
-    color: aliceblue;
+    color:black;
 }
 
 @media (max-width: 768px) {

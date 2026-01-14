@@ -1,6 +1,6 @@
 footer{
-    background: rgb(173, 224, 64);
-    color: black;
+    background: #003151;
+    color: rgb(255, 255, 255);
     font-size: 0.75rem;
     padding: 0.6rem;
     display: block;
@@ -13,6 +13,10 @@ footer{
 small{
     font-family: inherit;
     font-size: 1rem;
+}
+
+footer a {
+    color: aliceblue;
 }
 
 .navbar, footer {
