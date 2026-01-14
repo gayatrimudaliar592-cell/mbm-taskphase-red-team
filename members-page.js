@@ -1,7 +1,10 @@
 const members = [
     { name: "Anjali Dharmaraju", img: "Anjali_casual.jpeg", exImg: "Anjali_baby.jpeg", quote: "Life is a soup and I am a fork.", color: "#AAE170" },
     { name: "Anna D' Souza", img: "Anna_casual.jpeg", exImg: "Anna_baby.jpeg", quote: "Built from curiosity, chaos, and caffeine.", color: "#C08522" },
-    { name: "Gayatri B. Mudaliar", img: "Gayatri_casual.jpeg", exImg: "Gayatri_baby.jpeg", quote: "My favourite party trick is not going.", color: "black" }
+    { name: "Gayatri B. Mudaliar", img: "Gayatri_casual.jpeg", exImg: "Gayatri_baby.jpeg", quote: "My favourite party trick is not going.", color: "plum" },
+    { name: "Kiah D'Souza", img: "Kiah_casual.jpeg", exImg: "Kiah_baby.jpeg", quote: "Life is a soup and I am a fork.", color: "#A94064" },
+    { name: "Kimaya Kaushik", img: "Kimaya_casual.jpeg", exImg: "Kimaya_casual.jpeg", quote: "Life is a soup and I am a fork.", color: "#020092" },
+    { name: "Niona Vazirani", img: "Niona_casual.jpeg", exImg: "Niona_baby.jpeg", quote: "Life is a soup and I am a fork.", color: "#761c1c" },
 ];
 
 const frontImg = document.getElementById('member-front');

@@ -155,6 +155,11 @@ header{
         position: relative;
     }
 
+    .homepage img{
+        height: 2rem;
+        width: 2rem;
+    }
+
     .links {
         position: absolute;
         top: 100%;
