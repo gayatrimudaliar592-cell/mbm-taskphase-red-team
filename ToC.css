@@ -3,10 +3,11 @@
     font-weight: 200;
 }
 
-aside {
+.aside {
     padding: 1rem;
     background: transparent;
     color: var(--text);
+    padding-top: 0;
   
     border-radius: 14px;
   
@@ -15,23 +16,30 @@ aside {
   
     width:fit-content;
     align-self: start;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
   }
   
 
-aside ul {
+.aside ul {
     margin: 0;
     padding: 0;
     list-style: none;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(240, 248, 255);
+    border-radius: 8px;
 }
 
 
 
-aside li {
+.aside li {
     padding: 0.2rem;
 }
 
-aside li a {
+.aside li a {
     color: rgb(0, 0, 0);
     text-transform: none;
     display: flex; 
@@ -39,9 +47,10 @@ aside li a {
     transition: transform 0.3s ease-out;
     text-decoration: none;
     margin-left: 1rem;
+    padding: 0.6rem;
 }
 
-aside li a.active {
+.aside li a.active {
     font-weight: 100;
     transform: scale(1.08);
 }

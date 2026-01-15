@@ -1,5 +1,5 @@
 const headings = Array.from(document.getElementsByTagName("h2"));
-const aside = document.querySelector("aside");
+const aside = document.querySelector('.aside');
 const ul = document.createElement("ul");
 aside.appendChild(ul);
 
