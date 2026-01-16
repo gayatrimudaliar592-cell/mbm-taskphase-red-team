@@ -67,7 +67,7 @@ const members = [
     name: "Shravan Kumar S.",
     img: "Shravan_casual.jpeg",
     exImg: "Shravan_baby.jpeg",
-    quote: "Snacks.",
+    quote: "What's life if you can't eat whatever and whenever you want?",
     subsystem: "Human Practices, Wet Lab",
     color: "#000000",
   },
