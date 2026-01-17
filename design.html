@@ -122,98 +122,264 @@
         <div id="content">
           <h2>Introduction</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            efficitur sapien in fringilla dapibus. Fusce commodo tincidunt
-            volutpat. Cras euismod ornare ornare. Donec elit sapien, sodales a
-            eros sed, tempus volutpat tellus. Cras at magna nisi. Vestibulum et
-            diam eu felis luctus posuere vitae non tortor. Vivamus at elit
-            commodo, rutrum tellus vel, volutpat tellus.
+            Curli fibers are extracellular amyloid proteins naturally produced
+            by E. coli that self-assemble into robust fibrous networks. Because
+            curli fibers are secreted outside the cell and remain stable after
+            cell lysis, they are an ideal biological scaffold for creating
+            non-living, functional biomaterials. In this project, we aimed to
+            engineer curli fibers to interface effectively with MXene, a
+            negatively charged two-dimensional nanomaterial, and to integrate
+            them into a composite filtration system for the removal of
+            organochlorine pesticides (OCPs) from water.
           </p>
           <p>
-            ipsum sapien, vestibulum at ante non, euismod vehicula dui. Nunc
-            ornare tempor quam, sed scelerisque dolor. Vivamus sit amet
-            consequat felis, eu sollicitudin nulla. Phasellus id nisi quis erat
-            dictum aliquet. Vestibulum vulputate enim nec augue vulputate, et
-            interdum nunc ultricies. Ut lobortis quis diam ac accumsan. In
-            molestie tortor sed arcu vulputate tristique. In bibendum euismod
-            porta. Morbi ac venenatis erat. Curabitur consequat convallis purus
-            ac sagittis. Ut tempus ac erat at rutrum. Morbi dolor sapien,
-            fermentum nec ex et, ornare ullamcorper nisl.
+            To enhance interactions between curli fibers and MXene, we
+            genetically modified the major curli subunit protein CsgA by adding
+            a C-terminal poly-lysine tag (K8). Lysine residues are positively
+            charged at physiological pH, enabling strong electrostatic
+            attraction to the negatively charged surface terminations of MXene.
           </p>
+          <h2>Genetic Construct Design</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            efficitur sapien in fringilla dapibus. Fusce commodo tincidunt
-            volutpat. Cras euismod ornare ornare. Donec elit sapien, sodales a
-            eros sed, tempus volutpat tellus. Cras at magna nisi. Vestibulum et
-            diam eu felis luctus posuere vitae non tortor. Vivamus at elit
-            commodo, rutrum tellus vel, volutpat tellus.
+            The engineered construct was designed with the following
+            architecture:
+            <br />
+            PcsgA → RBS → csgA → GSGSGS linker → K8 tag → BBa_B0015 terminator
           </p>
+          <ul>
+            <li>
+              PcsgA promoter: <br />
+              The native curli promoter was used to ensure expression under
+              curli-inducing conditions, maintaining physiological relevance and
+              minimizing metabolic burden.
+            </li>
+            <li>
+              Ribosome Binding Site (RBS):<br />
+              A standard bacterial RBS was included to ensure efficient
+              translation initiation.
+            </li>
+            <li>
+              csgA coding sequence: <br />
+              Encodes the major structural subunit of curli fibers.
+            </li>
+            <li>
+              GSGSGS flexible linker: <br />
+              A short glycine-serine-rich linker was inserted to spatially
+              separate CsgA from the lysine tag, reducing steric interference
+              and preserving proper curli fiber assembly.
+            </li>
+            <li>
+              K8 poly-lysine tag: <br />
+              Eight lysine residues were appended to the C-terminus of CsgA to
+              enhance electrostatic binding to MXene. K8 was chosen to increase
+              surface charge while minimizing risks of aggregation or secretion
+              defects that can occur with longer poly-lysine sequences.
+            </li>
+            <li>
+              BBa_B0015 terminator:<br />
+              A standard double terminator was included to ensure reliable
+              transcriptional termination and prevent read-through into
+              downstream sequences.
+            </li>
+          </ul>
+          <figure>
+            <img src="plasmiddesign1.png" alt="Plasmid Design" />
+            <figcaption>Figure 1: Plasmid Design</figcaption>
+          </figure>
+          <h3>Gibson Assembly and Transformation strategy:</h3>
           <p>
-            Aenean ipsum sapien, vestibulum at ante non, euismod vehicula dui.
-            Nunc ornare tempor quam, sed scelerisque dolor. Vivamus sit amet
-            consequat felis, eu sollicitudin nulla. Phasellus id nisi quis erat
-            dictum aliquet. Vestibulum vulputate enim nec augue vulputate, et
-            interdum nunc ultricies. Ut lobortis quis diam ac accumsan. In
-            molestie tortor sed arcu vulputate tristique. In bibendum euismod
-            porta. Morbi ac venenatis erat. Curabitur consequat convallis purus
-            ac sagittis. Ut tempus ac erat at rutrum. Morbi dolor sapien,
-            fermentum nec ex et, ornare ullamcorper nisl.
+            The final engineered plasmid, pSB1C3_PcsgA_CsgA-K8, should encode a
+            lysine-functionalized curli subunit that can self-assemble into
+            fibers that are capable of linking with MXene. This design would
+            help produce a cell-free component that can be integrated with
+            chitosan and chitin into composite filtration films for
+            environmental remediation. <br />
+            Gibson Assemble can be used as a cloning technique here. In this
+            approach, the curli expression cassette (PcsgA-csgA-K8-BBa_B0015)
+            and the pSB1C3 backbone will be amplified using PCR with the help of
+            primers, introducing overlapping homologous regions. These fragments
+            will then be assembled in a single isothermal reaction that will
+            ensure its precise and efficient construction. <br />
+            Now, the recombinant plasmid can be introduced into the competent
+            Escherichia coli DH5α cells via heat-shock transformation. DH5α has
+            a high transformation efficiency and suitability for plasmid
+            propagation and sequence verification. Positive clones will be
+            identified through antibiotic selection and further confirmed by
+            restriction analysis and sequencing. Then the plasmid will be
+            transformed into a curli-producing E. coli K-12 strain for
+            downstream curli fiber expression and other functional assays.
+            <br />
           </p>
+          <h2>Proposed Approach Using Synthetic Biology</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-            vitae erat eget nisi porttitor volutpat in quis nulla. Nunc
-            fringilla laoreet rhoncus. Quisque at euismod ante. Nam egestas et
-            libero ut blandit. In ullamcorper elementum varius. Vivamus vel
-            hendrerit lacus. Sed ultrices magna quis neque ornare vestibulum.
-            Nulla efficitur velit id nisl sagittis, venenatis elementum lorem
-            lobortis.
+            Our project employs the Biofilm-Integrated Nanofibre Display (BIND)
+            strategy to engineer functional biofilm materials using the native
+            curli system of Escherichia coli. BIND enables the extracellular
+            display of genetically encoded peptide domains by fusing them to
+            CsgA, the major structural subunit of curli amyloid fibres. Through
+            this approach, biofilm formation and material functionality are
+            genetically programmed at the protein level (<a
+              href="https://doi.org/10.1038/ncomms5945 "
+              >Nguyen et al., 2014</a
+            >;<a href="https://doi.org/10.1101/gad.205310.112"
+              >Sivanathan & Hochschild, 2012</a
+            >;<a href="https://doi.org/10.1038/nmat3912">Chen et al., 2014</a
+            >;<a href="https://doi.org/https://doi.org/10.1002/bit.25638"
+              >Botyanszki et al., 2015</a
+            >).
           </p>
+          <h3>BIND Mechanism- (Biofilm Integrated Nanofibre Display)</h3>
+          <figure>
+            <img src="diagram_design.webp" alt="Image on BIND MECHANISM" />
+            <figcaption>
+              <strong>Figure 2: </strong>Shows how the BIND mechanism expresses
+              CsgA- peptide fusion into engineered biofilm with programmable
+              functions
+              <a href="https://doi.org/10.1038/ncomms5945 "
+                >(Nguyen et al., 2014)</a
+              >
+            </figcaption>
+          </figure>
+          <h3>Engineering Rationale</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-            vitae erat eget nisi porttitor volutpat in quis nulla. Nunc
-            fringilla laoreet rhoncus. Quisque at euismod ante. Nam egestas et
-            libero ut blandit. In ullamcorper elementum varius. Vivamus vel
-            hendrerit lacus. Sed ultrices magna quis neque ornare vestibulum.
-            Nulla efficitur velit id nisl sagittis, venenatis elementum lorem
-            lobortis.
+            Curli fibres are extracellular amyloid nanofibres naturally produced
+            by E. coli and form the structural scaffold of bacterial biofilms.
+            The curli biogenesis pathway secretes unfolded CsgA monomers through
+            the outer-membrane pore CsgG, where they assemble extracellularly
+            into fibres nucleated by CsgB. CsgA tolerates the fusion of short,
+            unstructured peptide domains without disrupting secretion or fibre
+            assembly. <br /><br />
+            The BIND strategy exploits this tolerance by genetically fusing
+            functional peptides to CsgA, thereby enabling simultaneous fibre
+            assembly and functional display within the biofilm extracellular
+            matrix. <br /><br />
+            This BIND-based design enables material functionality to be encoded
+            directly in the genetic sequence, eliminating the need for external
+            modification steps during fiber formation. By using lysine-rich
+            peptide domains, we introduce tunable surface chemistry while
+            preserving robust curli assembly and biofilm formation. The
+            resulting system converts bacterial biofilms into living,
+            self-assembling materials with genetically programmable properties
+            (<a href="https://doi.org/10.1038/ncomms5945 "
+              >Nguyen et al., 2014</a
+            >;
+            <a href="https://doi.org/10.1038/nmat3912">Chen et al., 2014</a>).
           </p>
+          <h3>Mechanism of BIND in Our System:</h3>
+          <ol>
+            <li>
+              Genetic fusion of a lysine-rich peptide domain to CsgA using a
+              flexible linker.
+            </li>
+            <li>
+              Expression of the protein and secretion through the natural curli
+              export system.
+            </li>
+            <li>
+              Extracellular self-assembly of the monomers into amyloid
+              nanofibres on the cell surface nucleated by CsgB.
+            </li>
+            <li>
+              Display of the lysine-rich domains at high density on the surface
+              of the fibre network and transformation of the biofilm matrix into
+              a programmable material network.
+            </li>
+          </ol>
+          <h3>Conclusion</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-            vitae erat eget nisi porttitor volutpat in quis nulla. Nunc
-            fringilla laoreet rhoncus. Quisque at euismod ante. Nam egestas et
-            libero ut blandit. In ullamcorper elementum varius. Vivamus vel
-            hendrerit lacus. Sed ultrices magna quis neque ornare vestibulum.
-            Nulla efficitur velit id nisl sagittis, venenatis elementum lorem
-            lobortis.
+            By integrating lysine-functionalized peptides into curli nanofibres
+            using the BIND strategy, our engineering approach transforms E. coli
+            biofilms into genetically programmable material systems. This design
+            establishes a robust and modular platform for engineering
+            biofilm-based functional materials.
           </p>
+          <h2>
+            Filtration System for Removal of Organochlorine Pesticides (OCPs)
+          </h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-            vitae erat eget nisi porttitor volutpat in quis nulla. Nunc
-            fringilla laoreet rhoncus. Quisque at euismod ante. Nam egestas et
-            libero ut blandit. In ullamcorper elementum varius. Vivamus vel
-            hendrerit lacus. Sed ultrices magna quis neque ornare vestibulum.
-            Nulla efficitur velit id nisl sagittis, venenatis elementum lorem
-            lobortis.
+            It has a three-component structure consisting of chitosan beads,
+            nanosheets of MXene materials, and curli fibers that remove
+            organochlorine pesticides effectively from polluted water. The
+            chitosan bead layer functions as the main medium for adsorption.
+            Chitosan, which is found in chitin, has amine and hydroxyl groups,
+            which allow for electrostatic attraction and hydrogen bonding
+            between the chitosan and the hydrophobic pesticide, hence being very
+            efficient in the removal of organochlorines from water
+            <a href="https://doi.org/10.1016/j.carbpol.2010.11.003"
+              >(Lu et al., 2011)</a
+            >. Chitosan powder is readily available and can be purchased from
+            many sources such as IndiaMART. The beads can then be prepared in
+            the lab.
+            <br />
+            The layer of MXene nanosheets provides a high surface secondary
+            filtration and catalysis layer. Generally, MXenes possess
+            hydrophilic, conductivity, and surface chemistry attributes, and
+            their addition to protein matrices, as has been shown in some recent
+            bioprinting studies, provides mechanical strength and antibacterial
+            capability
+            <a href="https://doi.org/10.1039/d4ma00112e"
+              >(Garcia et al., 2024)</a
+            >. The MXene can be procured from Sigma Aldrich.<br />
+            The curli fiber layer, made of self-assembling bacterial amyloid
+            proteins, is a nanofibrous network which increases mechanical
+            filtration properties and also increases the number of binding sites
+            due to amino acid functional groups. The curli fiber increases
+            biofilm stability and also increases the binding of residual
+            pesticide molecules and nanoparticles.<br />
+            This multi-functional filtration technique combines physical sieving
+            action, chemical adsorption processes, and biological/nanomaterial
+            interactions in an effort to remove organochlorines from water.
+            However, due to the strict regulation of OCPs (high toxicity), we
+            intend to use an analog, pentachlorocyclohexane, during our testing
+            process.
           </p>
+          <h2>References</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-            vitae erat eget nisi porttitor volutpat in quis nulla. Nunc
-            fringilla laoreet rhoncus. Quisque at euismod ante. Nam egestas et
-            libero ut blandit. In ullamcorper elementum varius. Vivamus vel
-            hendrerit lacus. Sed ultrices magna quis neque ornare vestibulum.
-            Nulla efficitur velit id nisl sagittis, venenatis elementum lorem
-            lobortis.
+            Botyanszki, Z., Tay, P. K. R., Nguyen, P. Q., Nussbaumer, M. G., &
+            Joshi, N. S. (2015). Engineered catalytic biofilms: Site-specific
+            enzyme immobilization onto E. coli curli nanofibers. Biotechnology
+            and Bioengineering, 112(10), 2016-2024.
+            <a herf="https://doi.org/https://doi.org/10.1002/bit.25638"
+              >https://doi.org/https://doi.org/10.1002/bit.25638</a
+            >
+            <br />
+            Chen, A. Y., Deng, Z., Billings, A. N., Seker, U. O. S., Lu, M. Y.,
+            Citorik, R. J., Zakeri, B., & Lu, T. K. (2014). Synthesis and
+            patterning of tunable multiscale materials with engineered cells.
+            Nature Materials, 13(5), 515-523.<a
+              href="https://doi.org/10.1038/nmat3912"
+              >https://doi.org/10.1038/nmat3912</a
+            >
+            <br />
+            García, M. a. A., Hidouri, S., Little, J. M., Modafferi, D., Hao,
+            X., Chen, P., & Courchesne, N. D. (2024). Conductive MXene
+            nanosheets infused in protein fiber hydrogels for bioprinting and
+            thin film electrodes. Materials Advances, 5(17), 6873-6886.
+            <a href="https://doi.org/10.1039/d4ma00112e">
+              https://doi.org/10.1039/d4ma00112e</a
+            >
+            <br />
+            Lu, L. C., Wang, C. I., & Sye, W. F. (2011). Applications of
+            chitosan beads and porous crab shell powder for the removal of 17
+            organochlorine pesticides (OCPs) in water solution. Carbohydrate
+            Polymers, 83(4), 1984-1989.
+            <a href="https://doi.org/10.1016/j.carbpol.2010.11.003"
+              >https://doi.org/10.1016/j.carbpol.2010.11.003 </a
+            ><br />
+            Nguyen, P. Q., Botyanszki, Z., Tay, P. K. R., & Joshi, N. S. (2014).
+            Programmable biofilm-based materials from engineered curli
+            nanofibres. Nature Communications, 5(1), 4945.
+            <a href="https://doi.org/10.1038/ncomms5945"
+              >https://doi.org/10.1038/ncomms5945</a
+            >
+            <br />
+            Sivanathan, V., & Hochschild, A. (2012). Generating extracellular
+            amyloid aggregates using E. coli cells. Genes & Development, 26(23),
+            2659-2667.<a href="https://doi.org/10.1101/gad.205310.112"
+              >https://doi.org/10.1101/gad.205310.112</a
+            >
+            <br />
           </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-            vitae erat eget nisi porttitor volutpat in quis nulla. Nunc
-            fringilla laoreet rhoncus. Quisque at euismod ante. Nam egestas et
-            libero ut blandit. In ullamcorper elementum varius. Vivamus vel
-            hendrerit lacus. Sed ultrices magna quis neque ornare vestibulum.
-            Nulla efficitur velit id nisl sagittis, venenatis elementum lorem
-            lobortis.
-          </p>
-          <h2>Impact</h2>
         </div>
       </div>
     </main>

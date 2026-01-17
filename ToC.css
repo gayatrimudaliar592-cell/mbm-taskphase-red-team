@@ -16,6 +16,7 @@
   overflow-x: hidden;
   overflow-y: auto;
   scrollbar-width: none;
+  max-width: 100%;
 }
 
 .aside ul {

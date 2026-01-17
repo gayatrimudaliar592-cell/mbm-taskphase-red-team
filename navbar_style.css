@@ -6,10 +6,15 @@ body {
   overflow: visible;
   font-family: "Saira Extra Condensed", sans-serif;
   font-weight: 700;
+  min-height: 100vh;
 }
 
 main {
   overflow-x: clip;
+}
+
+body {
+  flex-shrink: 0;
 }
 
 .main-content {
@@ -121,6 +126,16 @@ header {
   height: 28px;
   width: 28px;
   padding-bottom: 0.75rem;
+}
+
+.contacts-list li {
+  list-style: none;
+  place-items: center;
+}
+
+.contacts-list li img {
+  height: 50%;
+  width: 50%;
 }
 
 #content {
