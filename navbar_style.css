@@ -37,6 +37,7 @@ header {
   right: 0;
   left: 0;
   z-index: 1000;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .links {
@@ -75,6 +76,10 @@ header {
   cursor: pointer;
   padding: 0rem 1rem;
   font-size: 2rem;
+}
+
+.ddown a {
+  text-decoration: none;
 }
 
 .ddown_content {

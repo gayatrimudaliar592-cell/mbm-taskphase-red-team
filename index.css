@@ -63,9 +63,27 @@ html {
 }
 
 .scroll-section {
-  height: 100vh;
+  height: 80vh;
   position: relative;
-  background-color: #111111;
+  background-color: #3a3a3a;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.scroll-section-last1 {
+  height: 80vh;
+  position: relative;
+  background-image: linear-gradient(to top, #0190b4, #3a3a3a);
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.scroll-section-last2 {
+  height: 80vh;
+  position: relative;
+  background-color: #0190b4;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -84,6 +102,19 @@ html {
   color: #ffffff;
 }
 
+.sticky-text-tag {
+  position: sticky;
+  top: 50%;
+  text-align: center;
+  transform: translateY(-50%);
+  font-weight: 700;
+  font-size: clamp(3.8rem, 10vw, 5rem);
+  padding: 0 1.2rem;
+  opacity: 0.06;
+  transition: opacity 0.8s ease-out;
+  color: #ffffff;
+}
+
 body {
   background-image: none;
 }
@@ -94,7 +125,9 @@ body {
   padding: 0;
 }
 
-.sticky-text.active {
+.sticky-text.active,
+.sticky-text-tag.active,
+.sticky-text-last {
   opacity: 1;
 }
 
