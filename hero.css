@@ -19,6 +19,7 @@ p {
   margin-bottom: 1rem;
   font-weight: 600;
   font-family: "Times New Roman", Times, serif;
+  padding: 3rem;
 }
 
 body.dark #content {

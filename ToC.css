@@ -47,11 +47,11 @@
 }
 
 .aside li a.active {
-  transform: scale(1.26);
+  transform: scale(1.09);
 }
 
 .aside li a:hover {
-  transform: scale(1.1);
+  transform: scale(1.09);
 }
 
 :root {
