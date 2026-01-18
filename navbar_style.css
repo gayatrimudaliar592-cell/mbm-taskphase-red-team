@@ -163,6 +163,10 @@ header {
   color: rgb(0, 35, 140);
 }
 
+body.dark #content a {
+  color: rgb(176, 218, 254);
+}
+
 #content a:hover {
   color: grey;
 }

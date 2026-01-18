@@ -78,12 +78,17 @@ html {
   overflow: hidden;
 }
 
+.scroll-section span {
+  color: rgb(255, 225, 0);
+  font-weight: 500;
+}
+
 .sticky-text {
   position: sticky;
   top: 50%;
   text-align: center;
   transform: translateY(-50%);
-  font-weight: 700;
+  font-weight: 500;
   font-size: clamp(1.8rem, 6vw, 3rem);
   padding: 0 1.2rem;
   opacity: 0.06;
