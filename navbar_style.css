@@ -69,6 +69,10 @@ h5 {
   font-weight: 500;
 }
 
+#content-hp {
+  font-size: 1.3rem;
+}
+
 header {
   position: sticky;
   top: 0;
