@@ -226,6 +226,10 @@ body.dark #content a {
   color: rgb(176, 218, 254);
 }
 
+body.dark #content a {
+  color: aliceblue;
+}
+
 #content a:hover,
 #content-hp a:hover {
   color: grey;
