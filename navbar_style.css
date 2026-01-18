@@ -35,6 +35,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  max-width: 60vw;
 }
 
 figure {
@@ -242,10 +243,16 @@ h2 {
 
 .references {
   text-align: left;
+  word-wrap: break-word;
 }
 
 .references li {
   font-weight: 300;
+  word-wrap: break-word;
+}
+
+.references a {
+  word-wrap: break-word;
 }
 
 @media (max-width: 768px) {
