@@ -1,0 +1,366 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Landing Page" />
+    <title>Red-Team (2025-26)</title>
+    <link
+      rel="icon"
+      href="https://static.igem.wiki/teams/5645/wiki-images/navbar/mbm-logo-favicon.webp"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="license" href="#" />
+    <link rel="stylesheet" href="navbar_style.css" />
+    <link rel="stylesheet" href="lnd_mode.css" />
+    <link rel="stylesheet" href="ToC.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="hero.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="index.html" class="homepage"
+          ><img src="icons8-home-50.png"
+        /></a>
+        <button class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="links" id="links">
+          <li>
+            <button class="ddown">Project</button>
+            <ul class="ddown_content">
+              <li><a href="description.html">Description</a></li>
+              <li><a href="design.html">Design</a></li>
+              <li><a href="proof-of-concept.html">Proof of Concept</a></li>
+              <li><a href="contributions.html">Contribution</a></li>
+              <li><a href="engineering.html">Engineering</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="safety.html">Safety</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <button class="ddown">Wet Lab</button>
+            <ul class="ddown_content">
+              <li><a href="experiments.html">Experiments</a></li>
+              <li><a href="measurements.html">Measurements</a></li>
+              <li><a href="notebook.html">Notebook</a></li>
+              <li><a href="lab-safety.html">Lab Safety</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <button class="ddown"><a href="dry_lab.html">Dry Lab</a></button>
+          </li>
+
+          <li>
+            <button class="ddown">
+              <a href="hardware.html">Hardware & Software</a>
+            </button>
+          </li>
+
+          <li>
+            <button class="ddown">Engagement</button>
+            <ul class="ddown_content">
+              <li><a href="human-practices.html">Human Practices</a></li>
+              <li><a href="education.html">Education</a></li>
+              <li><a href="sustainability.html">Sustainability</a></li>
+              <li><a href="collaboration.html">Collaboration</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <button class="ddown">Team</button>
+            <ul class="ddown_content">
+              <li><a href="members.html">Members</a></li>
+              <li><a href="attributions.html">Attributions</a></li>
+              <li><a href="awards.html">Awards</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="lnd_toggle" id="page_theme">
+          <li>
+            <button id="theme-toggle">
+              <div class="toggle">
+                <img
+                  src="light-mode-svgrepo-com.svg"
+                  alt="Light mode"
+                  class="light-mode-icon"
+                />
+                <img
+                  src="dark-mode-night-moon-svgrepo-com (1).svg"
+                  alt="Dark mode"
+                  class="dark-mode-icon"
+                />
+              </div>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div id="hero">
+        <h1 class="hero-section">Model</h1>
+      </div>
+      <div class="main-content">
+        <div class="aside" id="aside"></div>
+        <div id="content">
+          <h2>Introduction</h2>
+
+          <p>
+            Our goal was to assess the interactions between Curli fibers with an
+            added Lysine tail and the MXene nanofilm. We identified that Curli
+            fibers naturally bind to MXene, but the addition of positively
+            charged amino acids enhances binding and extends the structure's
+            longevity in water. This tail chain can be changed according to the
+            use of our filter
+            <a
+              href="https://doi.org/10.3390/molecules25173858
+"
+              >(Ahmad et al., 2020; Tantipanjaporn & Wong, 2023)</a
+            >.
+          </p>
+
+          <h2>Sequence Retrieval & Addition of Tags</h2>
+
+          <p>
+            We obtained the sequence of CsgAs major subunit from PDB and used
+            BLAST to find the corresponding gene sequence.
+          </p>
+
+          <figure>
+            <img src="sequence.jpeg" alt="Description of the data" />
+            <figcaption>
+              <strong>Figure 1.</strong>PDB sequence blasted to find gene.
+            </figcaption>
+          </figure>
+
+          <p>
+            This sequence was run through SignalP to identify the N-terminal
+            signal sequence, and the His-tag was removed along with it for
+            structure generation.
+          </p>
+
+          <figure>
+            <img src="seq2.jpeg" alt="Description of the data" />
+            <figcaption>
+              <strong>Figure 2.</strong>Sequence without signal sequence.
+            </figcaption>
+          </figure>
+
+          <p>
+            We added a linker (2(GGGGS)) and an 8-lysine tag to the end of this
+            sequence to form a protein with an overall structure similar to
+            Chain A of curli fibres, but with enhanced affinity for MXene.
+          </p>
+
+          <figure>
+            <img src="seq3.jpeg" alt="Description of the data" />
+            <figcaption>
+              <strong>Figure 3.</strong>Sequence with linker and tag.
+            </figcaption>
+          </figure>
+
+          <h2>Structural Modeling</h2>
+
+          <p>
+            Similarly, multiple tags of primarily positive residues were added,
+            and Alphafold 3 was used to obtain the structures:
+          </p>
+
+          <figure>
+            <img src="seq4.jpeg" alt="Description of the data" />
+            <figcaption>
+              <strong>Figure 4.</strong> Structures generated on the Alphafold
+              server with linker-tail sequences.
+            </figcaption>
+          </figure>
+
+          <h2>APBS Electrostatics</h2>
+
+          <p>
+            To preliminarily verify that the tags enhance the curli-MXene
+            reaction, we used the APBS (Adaptive Poisson-Boltzmann Solver)
+            electrostatics plugin in PyMOL. APBS computes electrostatics by
+            solving the Poisson-Boltzmann equation around molecules to obtain
+            electrostatic potentials, solvation energies and ion distributions.
+            In the curli-MXene-water system, APBS was used to visualise the tag
+            with the highest positive charge, which attracted the -OH groups of
+            the MXene particle
+            <a
+              href=" https://doi.org/10.1002/pro.3280
+"
+              >(Jurrus et al., 2017)</a
+            >. This provides a way to possibly optimise electrostatic adsorption
+            of MXene in aqueous conditions. The blue regions show positive
+            charge, the red regions show negative charge, and the white regions
+            show neutral charge
+            <a
+              href="https://pymolwiki.org/index.php/APBS_Electrostatics_Plugin
+"
+              >(APBS Electrostatics Plugin - PyMOL Wiki, n.d.)</a
+            >.
+          </p>
+
+          <figure>
+            <img src="seq5.png" alt="Description of the data" />
+            <figcaption>
+              <strong>Figure 5.</strong>APBS visualisations of generated
+              structures on PyMOL.
+            </figcaption>
+          </figure>
+
+          <p>
+            From the table, it is seen that the 8 Lysine residue tag had the
+            most dense positive region, which, in theory, should result in the
+            best adsorption to MXene. MXene’s APBS shows negatively charged top
+            and bottom regions that adsorb effectively to the positive regions
+            on curli fibers. Compared with the original csgA protein structure,
+            the tagged structures have significantly more positive charge
+            distributed. Since MXene is not an organic molecule, charges were
+            added to each atom individually before applying APBS, as pdb2pqr was
+            not possible.
+          </p>
+
+          <h2>Molecular Docking of Mxene to predicted structures</h2>
+
+          <p>
+            We performed molecular docking between the engineered curli fibers
+            and MXene to demonstrate their binding affinity. The results show a
+            stable electrostatic association between the MXene surface and
+            positively charged residues on the curli fibers
+            <a href="https://doi.org/10.1007/s00706-023-03076-1"
+              >(Mohanty & Mohanty, 2023)</a
+            >.
+          </p>
+
+          <figure>
+            <img src="seq6.png" alt="Description of the data" />
+            <figcaption><strong></strong></figcaption>
+          </figure>
+
+          <figure>
+            <img src="seq7.jpeg" alt="Description of the data" />
+            <figcaption>
+              <strong>Figure 8.</strong>Docking of Lysine Alanine Tag and MXene
+            </figcaption>
+          </figure>
+
+          <h2>Molecular Docking Simulations:</h2>
+
+          <p>
+            MDS provides additional evidence of binding behaviour by providing
+            stability of the complex in a solvent and showing how the molecules
+            move and rearrange over time. In the case of Curli fibers and MXene,
+            the system is electrostatics-driven and solvent-driven. Docking is
+            weak at modelling this. MDS would provide more realistic evidence
+            that the engineered tags can remain attached to the nanofilm in
+            real-world conditions
+            <a
+              href="https://doi.org/10.1021/acsomega.2c03951
+"
+              >(Shi et al., 2022)</a
+            >.
+          </p>
+
+          <h2>References</h2>
+          <ol>
+            <li>
+              Ahmad, N. N., Kamarudin, N. H. A., Leow, A. T. C., & Rahman, R. N.
+              Z. R. A. (2020). The Role of Surface Exposed Lysine in
+              Conformational Stability and Functional Properties of Lipase from
+              Staphylococcus Family. Molecules, 25(17), 3858.
+              <a
+                href="https://doi.org/10.3390/molecules25173858
+"
+                >https://doi.org/10.3390/molecules25173858</a
+              >
+            </li>
+
+            <li>
+              APBS Electrostatics Plugin - PyMOL Wiki. (n.d.).
+              <a
+                href="https://pymolwiki.org/index.php/APBS_Electrostatics_Plugin
+"
+                >https://pymolwiki.org/index.php/APBS_Electrostatics_Plugin</a
+              >
+            </li>
+
+            <li>
+              Jurrus, E., Engel, D., Star, K., Monson, K., Brandi, J., Felberg,
+              L. E., Brookes, D. H., Wilson, L., Chen, J., Liles, K., Chun, M.,
+              Li, P., Gohara, D. W., Dolinsky, T., Konecny, R., Koes, D. R.,
+              Nielsen, J. E., Head‐Gordon, T., Geng, W., . . . Baker, N. A.
+              (2017). Improvements to the APBS biomolecular solvation software
+              suite. Protein Science, 27(1), 112–128.
+              <a href="https://doi.org/10.1002/pro.3280"
+                >https://doi.org/10.1002/pro.3280</a
+              >
+            </li>
+
+            <li>
+              Mohanty, M., & Mohanty, P. S. (2023). Molecular docking in
+              organic, inorganic, and hybrid systems: a tutorial review.
+              Monatshefte Für Chemie - Chemical Monthly, 154(7), 683–707.
+              <a href=" https://doi.org/10.1007/s00706-023-03076-1"
+                >https://doi.org/10.1007/s00706-023-03076-1</a
+              >
+            </li>
+
+            <li>
+              Shi, M., Chen, T., Wei, S., Zhao, C., Zhang, X., Li, X., Tang, X.,
+              Liu, Y., Yang, Z., & Chen, L. (2022). Molecular Docking, Molecular
+              Dynamics Simulations, and Free Energy Calculation Insights into
+              the Binding Mechanism between VS-4718 and Focal Adhesion Kinase.
+              ACS Omega, 7(36), 32442–32456.
+              <a href="https://doi.org/10.1021/acsomega.2c03951"
+                >https://doi.org/10.1021/acsomega.2c03951</a
+              >
+            </li>
+
+            <li>
+              Tantipanjaporn, A., & Wong, M. (2023). Development and recent
+              advances in lysine and N-Terminal bioconjugation for peptides and
+              proteins. Molecules, 28(3), 1083.
+              <a href="https://doi.org/10.3390/molecules28031083"
+                >https://doi.org/10.3390/molecules28031083</a
+              >
+            </li>
+          </ol>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        <small
+          >&copy; - Content on this site is licensed under a
+          <a href="https://creativecommons.org/licenses/by/4.0/"
+            >Creative Commons Attribution 4.0 International license</a
+          >.</small
+        >
+      </p>
+      <p>
+        <small
+          >The repository used to create this website is available at
+          <a href="https://github.com/poseidon-boi/mbm-taskphase-red-team"
+            >https://github.com/poseidon-boi/mbm-taskphase-red-team</a
+          ></small
+        >
+      </p>
+    </footer>
+    <script src="lnd_mode.js"></script>
+    <script src="ToC.js"></script>
+    <script src="navbar.js"></script>
+  </body>
+</html>

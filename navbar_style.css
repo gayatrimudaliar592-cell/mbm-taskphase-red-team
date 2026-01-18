@@ -32,6 +32,10 @@ header {
   width: 100%;
 }
 
+#content img {
+  max-width: 50%;
+}
+
 .navbar {
   background-color: #003151;
   justify-content: center;
@@ -172,11 +176,6 @@ h2 {
 
 .references li {
   font-weight: 300;
-}
-
-.figure {
-  font-weight: 300;
-  text-align: center;
 }
 
 @media (max-width: 768px) {
