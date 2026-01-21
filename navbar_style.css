@@ -369,4 +369,9 @@ h2 {
   #content {
     width: 100%;
   }
+
+  .main-content {
+    display: block;
+    width: 100%;
+  }
 }

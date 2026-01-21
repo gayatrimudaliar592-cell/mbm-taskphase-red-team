@@ -57,4 +57,10 @@ body.dark #content {
   #content {
     width: 100%;
   }
+
+  .hero-section {
+    font-size: 4rem;
+    display: block;
+    width: 100%;
+  }
 }
